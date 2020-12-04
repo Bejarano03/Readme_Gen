@@ -15,6 +15,27 @@ const init = () =>
         {
             type: 'input',
             name: 'description',
+            message: 'Write Description'
+            
+        },
+        {
+            type: 'input',
+            name: 'table of contents',
+            message: 'Write out your table of contents'
+        },
+        {
+            type: 'input',
+            name: 'installation',
+            message: 'What are the steps to install your project?'
+        },
+        {
+            type: 'input',
+            name: 'usage',
+            message: 'Provide instructions and examples or use'
+        },
+        {
+            type: 'input',
+            name: 'credits',
             
         }
 
