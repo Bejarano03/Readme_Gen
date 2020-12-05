@@ -36,10 +36,29 @@ const init = () =>
         {
             type: 'input',
             name: 'credits',
+            message: 'Who helped you make this project?'
             
+        },
+        {
+            type: 'input',
+            name: 'license',
+            message: 'What licenses are you using?'
+        },
+        {
+            type: 'input',
+            name: 'test',
+            message: 'What tests did you do on your application?'
         }
 
 ]);
+
+const generateReadme = (answers) =>
+
+`# ${answers.title} 
+
+## Description
+${answers.description}
+`
 
 // function to write README file
 function writeToFile(fileName, data) {
