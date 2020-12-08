@@ -5,7 +5,7 @@ const util = require('util');
 const writeFileAsync = util.promisify(fs.writeFile);
 
 // array of questions for user
-const init = () => 
+const promptUser = () => 
     inquirer.prompt([
         {
             type: 'input',
@@ -90,20 +90,21 @@ ${answers.tests}
 `
 // function writeToFile
 
-cost init = async () => {
-    console.log('Hello!')
+const init = async () => {
+    console.log('Hello!');
+
     try {
-        const answers = await init();
+        const answers = await promptUser();
 
         const readME = writeToFile( answers );
 
-        await writeFileAsync('README.md', md);
+        await writeFileAsync('README.md', readME);
 
         console.log('Successfully created README.md');
     }   catch (err) {
         console.log(err);
-        }
-    };
+    }
+};
 
 // function call to initialize program
 init();
