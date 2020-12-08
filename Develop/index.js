@@ -20,7 +20,7 @@ const init = () =>
         },
         {
             type: 'input',
-            name: 'table of contents',
+            name: 'tableofcontents',
             message: 'Write out your table of contents'
         },
         {
@@ -52,22 +52,50 @@ const init = () =>
 
 ]);
 
-const generateReadme = (answers) =>
 
-`# ${answers.title} 
+
+// function to write README file
+
+const writeToFile = (answers) =>
+
+`# ${answers} 
 
 ## Description
 ${answers.description}
+
+## Table of Contents
+${answers.tableofcontents}
+
+## Installation
+${answers.installation}
+
+## Usage
+${answers.usage}
+
+## Credits
+${answers.credits}
+
+## License
+${answers.license}
+
+## Badges
+${answers.badges}
+
+## Contributing
+${answers.contributing}
+
+## Tests
+${answers.tests}
+
 `
-
-// function to write README file
-function writeToFile(fileName, data) {
-}
-
-// function to initialize program
-// function init() {
-
+// function writeToFile(fileName, data) {
 // }
 
+// function to initialize program
+init() 
+.then((answers) => writeFileAsync('FUNREADME.md', writeToFile(answers) ) )
+.then(() => console.log('Succesfully wrote to README.md'))
+.catch((err) => console.error(err));
+
 // function call to initialize program
-init();
+// init();
