@@ -91,7 +91,19 @@ ${answers.tests}
 // function writeToFile
 
 cost init = async () => {
+    console.log('Hello!')
+    try {
+        const answers = await init();
 
+        const readME = writeToFile( answers );
+
+        await writeFileAsync('README.md', md);
+
+        console.log('Successfully created README.md');
+    }   catch (err) {
+        console.log(err);
+        }
+    };
 
 // function call to initialize program
 init();
