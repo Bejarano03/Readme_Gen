@@ -88,14 +88,10 @@ ${answers.contributing}
 ${answers.tests}
 
 `
-// function writeToFile(fileName, data) {
-// }
+// function writeToFile
 
-// function to initialize program
-init() 
-.then((answers) => writeFileAsync('FUNREADME.md', writeToFile(answers) ) )
-.then(() => console.log('Succesfully wrote to README.md'))
-.catch((err) => console.error(err));
+cost init = async () => {
+
 
 // function call to initialize program
-// init();
+init();
