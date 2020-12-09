@@ -85,7 +85,7 @@ ${answers.badges}
 ${answers.contributing}
 
 ## Tests
-${answers.tests}
+${answers.test}
 
 `
 // function writeToFile
