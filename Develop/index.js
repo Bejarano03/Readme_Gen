@@ -46,6 +46,16 @@ const promptUser = () =>
         },
         {
             type: 'input',
+            name: 'badges',
+            message: 'What badges were needed?'
+        },
+        {
+            type: 'input',
+            name: 'contributing',
+            message: 'Who contributed to this project?'
+        },
+        {
+            type: 'input',
             name: 'test',
             message: 'What tests did you do on your application?'
         }
