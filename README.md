@@ -4,6 +4,15 @@ Homework 9 UW Bootcamp !
 
 ## Table of Contents
 
+1. [Developer Comment](#developer-comment)
+1. [User Story](#user-story)
+1. [Acceptance Criteria](#acceptance-criteria)
+1. [Demo](#demo)
+1. [Installation](#installation-and-git-repository)
+1. [Contributors](#contributors)
+1. [Future Development](#future-development)
+
+
 ## Developer Comment
 
 Welcome to my Readme Genarator, I was given the task to create an application which generates a readme genator. I hope you take the time to read through the instructions and let me know if there's anything wrong with this application. 
